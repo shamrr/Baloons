@@ -1,0 +1,16 @@
+.card
+    background: rgba($color-white, .8)
+    border-radius: .5rem
+    padding: 2.5rem
+    box-shadow: $box-shadow
+    text-align: center
+    transition: .6s all
+    @include respond(tab-land)
+        padding: 1.5rem
+    &__image
+        @include respond(tab-land)
+            width: 6rem
+            height: 6rem
+    &:hover
+        transform: translateY(-1.5rem) scale(1.1)
+    
